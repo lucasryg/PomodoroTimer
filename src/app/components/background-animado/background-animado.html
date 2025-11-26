@@ -1,0 +1,22 @@
+<div class="sky" [ngClass]="skyClass">
+
+  <!-- Sol -->
+  <div 
+    class="sun" 
+    *ngIf="isDay"
+    [ngStyle]="{'left.%': sunPosition}">
+  </div>
+
+  <!-- Lua -->
+  <div 
+    class="moon" 
+    *ngIf="!isDay"
+    [ngStyle]="{'left.%': moonPosition}">
+  </div>
+
+  <!-- Nuvens -->
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="cloud cloud3"></div>
+
+</div>

@@ -1,0 +1,42 @@
+button {
+    background-color: #f0c330;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.textoH1{
+    font-family: "Nabla", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 100px;
+    font-style: normal;
+    font-variation-settings:
+        "EDPT" 100,
+        "EHLT" 12;
+}
+
+.textoRelogio{
+    font-family: 'Quantico', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+app-background-animado {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+}
+
+.page {
+    position: relative;
+    z-index: 2;
+}
