@@ -1,19 +1,4 @@
-button {
-    background-color: #f0c330;
-    /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 50px;
-}
-
-.textoH1{
+.textoH1 {
     font-family: "Nabla", system-ui;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -24,7 +9,7 @@ button {
         "EHLT" 12;
 }
 
-.textoRelogio{
+.textoRelogio {
     font-family: 'Quantico', sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -39,4 +24,24 @@ app-background-animado {
 .page {
     position: relative;
     z-index: 2;
+}
+
+p {
+       font-family: 'Quantico', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color:white
+}
+
+button {
+  border: 2px solid #ccc;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
 }

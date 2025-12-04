@@ -1,1 +1,37 @@
-<p>pomodoro-timer works!</p>
+<div class="flex justify-center items-center flex-col mb-4  ">
+
+  <div class="flex flex-col gap-2 mt-4">
+    <div class="flex justify-between">
+
+      <button class="button-input" (click)="decrement()">-</button>
+
+      <input class="flex justify-center items-center text-center border-2 border-white rounded-3xl " type="datetime"
+        [(ngModel)]="value" (input)="onInputChange($event)" />
+
+      <button class="button-input" (click)="increment()">+</button>
+    </div>
+
+    <div class="flex flex-row gap-2">
+      <button value="25" (click)="onInputSelect($event)">25m</button>
+      <button value="45" (click)="onInputSelect($event)">45m</button>
+      <button value="60" (click)="onInputSelect($event)">1h</button>
+    </div>
+
+  </div>
+</div>
+
+<div class="clock">
+  <p class="time-display">{{ tempoFormatado }}</p>
+</div>
+
+<div class="buttons">
+  @if(!isRunning){
+  <button (click)="start()">Começar</button>
+  }
+  @else{
+
+  <button (click)="pause()">Pausar</button>
+  }
+
+  <button (click)="reset()">Resetar</button>
+</div>

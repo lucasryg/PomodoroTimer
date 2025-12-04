@@ -1,19 +1,18 @@
 <app-background-animado></app-background-animado>
 <main class="page">
-    <div class="relogio flex justify-center pt-20">
-        <p class="textoRelogio text-white">{{ relogio() }}</p>
-    </div>
+ <div class="relogio flex justify-center pt-20">
+        <p class="textoRelogio text-white">{{ TimeString}}</p>
+    </div> 
     <div class="flex justify-center pt-20">
         <p class="textoH1">Cronomodoro</p>
     </div>
 
-    <div class="cronometro flex justify-center h-70">
-
+    <div class="cronometro flex justify-center h-70"> 
+        
     </div>
     <!-- <img class="w-100" src="logo.png"> -->
-
+   
     <div class="flex justify-center gap-20">
-        <input type="number" [(ngModel)]="pomodoroTimer" placeholder="Tempo de Trabalho (min)" class="inputTempo" step="1"/>
         <button (click)="start()">Iniciar</button>
         <button (click)="stop()">Parar</button>
         <button (click)="reset()">Resetar</button>
